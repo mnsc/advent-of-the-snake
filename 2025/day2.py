@@ -8,9 +8,9 @@ with open("day2.txt") as f:
         (lower, upper) = r.split("-")
         for int_a in range(int(lower), int(upper) + 1):
             str_a = str(int_a)
-            if re.match("^(\\d+)\\1$", str_a):
+            if re.match(r"^(\d+)\1$", str_a):
                 total_part1 += int_a
-            if re.match("^(\\d+)\\1+$", str_a):
+            if re.match(r"^(\d+)\1+$", str_a):
                 total_part2 += int_a
 
     print(f"part 1 - {total_part1}")
