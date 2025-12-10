@@ -32,7 +32,7 @@ def main():
             print(f"before: {before_div} after: {after_div} -> {passing_zero_count}")
 
     print(f"Part 1 - {zero_count}")
-    print(f"Part 2 - {passing_zero_count}")
+    # WIP too many if:s to consider for now print(f"Part 2 - {passing_zero_count}")
 
 if __name__ == '__main__':
     main()
